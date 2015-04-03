@@ -1,10 +1,9 @@
 // Package underr provides access to underlying errors when wrapping errors.
 //
-// Often errors are "wrapped" in Go to augment them with additional
-// information. This package provides for some generic utilities to work with
-// such errors assuming they satisfy the interface defined here, which is that
-// they provide a method called `Underlying` which returns the error being
-// wrapped.
+// Often errors are "wrapped" to augment them with additional information. This
+// package provides for some generic utilities to work with such errors
+// assuming they satisfy the interface defined here, which is that they provide
+// a method called `Underlying` which returns the error being wrapped.
 package underr
 
 // Error is an error that has been wrapped, and Underlying returns the error it
